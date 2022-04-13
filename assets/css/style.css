@@ -447,6 +447,7 @@ h6 {
   background: url("../img/bg-img.gif") top center;
   background-size: contain;
   position: relative;
+  background-size: auto 100%;
 }
 
 #hero:before {
@@ -554,6 +555,12 @@ h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+}
+@media (max-width: 935px) {
+  #hero{
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
